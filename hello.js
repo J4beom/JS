@@ -1,1 +1,1 @@
-alert('Hello, world!');
+alert('어서오세요 !');
