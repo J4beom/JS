@@ -11,3 +11,8 @@ td {
     height: 300px;
     width: 300px;
 }
+img {
+    width: 295px;
+    height: 295px;
+    align-items: center;
+}
