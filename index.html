@@ -4,26 +4,64 @@
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="index.css" />
         <link href="https://fonts.googleapis.com/css?family=Baloo+Tamma" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+        <style type="text/css">
+        a:link { color: red; text-decoration: none;}
+        a:visited { color: black; text-decoration: none;}
+        a:hover { color: black; text-decoration: none;}
+        </style>
         <title>#SHOP</title>
     </head>
     <body>
-        <h1 style="text-align:center">#SHOP</h1>
-        <table>
-            <tr>
-                <td colspan="2">
-                    <a href="https://www.coupang.com/np/search?q=%EB%A0%88%EC%9D%B4%EC%96%B4%EB%93%9C%ED%8B%B0&channel=relate"><img src="https://img4c.coupangcdn.com/image/vendor_inventory/images/2016/04/11/22/5/8d421c55-e618-4839-949a-e0ab802fba0f.jpg"></a>
-                    <a href="http://www.thessadagu.net/"><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS0JU2HjUeUkWsal_UqpuDwYJGkBkUASxGpMSaCzI1vsReKWP09"></a>
-                </td>
-                <td rowspan="2"></td>
-            </tr>
-            <tr>
-                <td rowspan="2"></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td colspan="2"></td>
-            </tr>
-        </table>
+        <div id="staticone" style="position: fixed; right: 100px; bottom: 50px;">
+            <p id="YouSee">당신이 본 상품</p>
+        </div>
+        <div id="statictwo" style="position: fixed; right: 20px; bottom: 50px;">
+            <div id="statictwoin">
+                <a href="#header" id="Gotop">TOP</a>
+            </div>
+        </div>
+        <div id="header">
+            <h1 style="text-align:center">#SHOP</h1>
+        </div>
+        <div id="content">
+            <table>
+                <tr>
+                    <td colspan="2">
+                        <a href="https://www.coupang.com/np/search?q=%EB%A0%88%EC%9D%B4%EC%96%B4%EB%93%9C%ED%8B%B0&channel=relate"><img src="https://img4c.coupangcdn.com/image/vendor_inventory/images/2016/04/11/22/5/8d421c55-e618-4839-949a-e0ab802fba0f.jpg" style="max-width: 100%; height: auto;" alt="분홍색 레이어드 티셔츠"></a>
+                        <a href="http://www.thessadagu.net/"><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS0JU2HjUeUkWsal_UqpuDwYJGkBkUASxGpMSaCzI1vsReKWP09" style="max-width: 100%; height: auto;" alt="검은색 레이어드 티셔츠"></a>
+                    </td>
+                    <td rowspan="2">
+                        <div id="Gologin">
+                            <section class="loginform">
+                                <form name="login" action="index_submit" method="get" accept-charset="utf-8">
+                                    <ul>
+                                        <li>
+                                            <label for="usermail">Email</label>
+                                            <input type="email" name="usermail" placeholder="yourname@email.com" required>
+                                        </li>
+                                        <li>
+                                            <label for="password">Password</label>
+                                            <input type="password" name="password" placeholder="password" required>
+                                        </li>
+                                        <li>
+                                            <input type="submit" value="Login">
+                                        </li>
+                                    </ul>
+                                </form>
+                            </section>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="2"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="2"></td>
+                </tr>
+            </table>
+        </div>
         <script src="index.js" charset="utf-8"></script>
     </body>
 </html>
