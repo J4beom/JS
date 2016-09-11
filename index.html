@@ -1,35 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="index.css" />
         <link href="https://fonts.googleapis.com/css?family=Baloo+Tamma" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <style type="text/css">
-        a:link { color: red; text-decoration: none;}
+        a:link { color: black; text-decoration: none;}
         a:visited { color: black; text-decoration: none;}
         a:hover { color: black; text-decoration: none;}
         </style>
         <title>#SHOP</title>
     </head>
     <body>
-        <div id="staticone" style="position: fixed; right: 100px; bottom: 50px;">
-            <p id="YouSee">당신이 본 상품</p>
-        </div>
-        <div id="statictwo" style="position: fixed; right: 20px; bottom: 50px;">
-            <div id="statictwoin">
-                <a href="#header" id="Gotop">TOP</a>
+        <div id="backgroud">
+            <div id="staticone" style="position: fixed; right: 100px; bottom: 50px;">
+                <p id="YouSee">당신이 본 상품</p>
             </div>
-        </div>
-        <div id="header">
-            <h1 style="text-align:center">#SHOP</h1>
+            <div id="statictwo" style="position: fixed; right: 20px; bottom: 50px; cursor: pointer;" onclick="location.href='#header'">
+                <div id="statictwoin">
+                    <a id="Gotop">TOP</a>
+                </div>
+            </div>
+            <div id="header">
+                <div class="gnb" queryid="C1473579786194911001">
+                    <ul class="shop_hm">
+                        <li id="shop_hm" class="m">
+                            <a href="file:///home/kimsb/github/MyPracticePlace/index.html" onclick="clickcr(this, 'HNB.cast','','',event);" accesskey="1">
+                                <span class="fa fa-desktop fa-2x" id="desttop" aria-hidden="true"></span>
+                            </a>
+                        </li>
+                        <li id="shop_hm2" class="m2">
+                            <a href="file:///home/kimsb/github/MyPracticePlace/mobilesite.html" onclick="clickcr(this, 'HNB.cast','','',event);" accesskey="2">
+                                <span class="fa fa-mobile fa-2x" aria-hidden="true"></span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="home_set">
+                        <li class="makeHomePage hide">
+                            <a id="mkhome" class="m3" href="#mkhome" onclick="clickcr(this,'top.mkhome','','',event); this.style.hebavior='...mePage('heep://www.naver.com');ToolBar.popup();return false;">shop을 시작페이지로</a>
+                        </li>
+                    </ul>
+                </div>
+                <a id="sitelogo" href="file:///home/kimsb/github/MyPracticePlace/index.html#header">#SHOP</a>
+            </div>
         </div>
         <div id="content">
             <table>
                 <tr>
                     <td colspan="2">
-                        <a href="https://www.coupang.com/np/search?q=%EB%A0%88%EC%9D%B4%EC%96%B4%EB%93%9C%ED%8B%B0&channel=relate"><img src="https://img4c.coupangcdn.com/image/vendor_inventory/images/2016/04/11/22/5/8d421c55-e618-4839-949a-e0ab802fba0f.jpg" style="max-width: 100%; height: auto;" alt="분홍색 레이어드 티셔츠"></a>
-                        <a href="http://www.thessadagu.net/"><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS0JU2HjUeUkWsal_UqpuDwYJGkBkUASxGpMSaCzI1vsReKWP09" style="max-width: 100%; height: auto;" alt="검은색 레이어드 티셔츠"></a>
+                        <a href="https://www.coupang.com/np/search?q=%EB%A0%88%EC%9D%B4%EC%96%B4%EB%93%9C%ED%8B%B0&channel=relate" ><img src="https://img4c.coupangcdn.com/image/vendor_inventory/images/2016/04/11/22/5/8d421c55-e618-4839-949a-e0ab802fba0f.jpg" id="img1"style="max-width: 100%; height: auto;" alt="분홍색 레이어드 티셔츠"></a>
+                        <a href="http://www.daita.co.kr/shop/shopbrand.html?search=&page=1&sort=&money1=&money2=&prize1=%B7%B9%C0%CC%BE%EE%B5%E5&company1=&content1=&brcode="><img src="http://www.daita.co.kr/shopimages/daita/0290080000653.jpg?09051350" style="max-width: 100%; height: auto;" alt="흰색 레이어드 후드 티셔츠"></a>
                     </td>
                     <td rowspan="2">
                         <div id="Gologin">
@@ -37,14 +59,14 @@
                                 <form name="login" action="index_submit" method="get" accept-charset="utf-8">
                                     <ul>
                                         <li>
-                                            <label for="usermail">Email</label>
+                                            <label for="usermail" style="font-size:2em">ID</label>
                                             <input type="email" name="usermail" placeholder="yourname@email.com" required>
                                         </li>
                                         <li>
-                                            <label for="password">Password</label>
+                                            <label for="password" style="font-size:2em">Password</label>
                                             <input type="password" name="password" placeholder="password" required>
                                         </li>
-                                        <li>
+                                        <li id="loginbutton">
                                             <input type="submit" value="Login">
                                         </li>
                                     </ul>
