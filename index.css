@@ -1,0 +1,55 @@
+h1 {
+    font-family: 'Baloo Tamma', cursive;
+    font-size: 100px;
+}
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+td {
+    border: 2px solid black;
+    height: 18.8em;
+    width: 18.8em;
+}
+img {
+    width: 18.8em;
+    height: 18.8em;
+}
+#staticone{
+    border-radius: 20px;
+    width: 300px;
+    height: 500px;
+    background-color: #FAE8EA
+}
+#Gologin{
+    margin-bottom: 300px;
+    width: 300px;
+    height: 300px;
+}
+.loginform ul {
+  padding: 0;
+  margin: 0;
+}
+.loginform li {
+  display: inline;
+  float: left;
+}
+label {
+  display: block;
+  color: #999;
+}
+.cf:before,
+.cf:after {
+    content: "";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+.cf {
+    *zoom: 1;
+}
+:focus {
+  outline: 0;
+}
